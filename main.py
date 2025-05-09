@@ -34,13 +34,13 @@ with col1:
     uploaded_file1 = st.file_uploader("📷 Upload afbeelding 1", type=["jpg", "jpeg", "png"], key="file1")
     if uploaded_file1:
         image1 = Image.open(uploaded_file1).convert("RGB")
-        st.image(image1, caption="Afbeelding 1", use_container_width=True)
+        st.image(image1, caption="Afbeelding 1")
 
 with col2:
     uploaded_file2 = st.file_uploader("📷 Upload afbeelding 2", type=["jpg", "jpeg", "png"], key="file2")
     if uploaded_file2:
         image2 = Image.open(uploaded_file2).convert("RGB")
-        st.image(image2, caption="Afbeelding 2", use_container_width=True)
+        st.image(image2, caption="Afbeelding 2")
 
 # --- AI-vergelijking uitvoeren ---
 if uploaded_file1 and uploaded_file2:
